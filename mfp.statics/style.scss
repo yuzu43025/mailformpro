@@ -1,0 +1,188 @@
+.header {
+    .custom-shape-divider-top-1624707177 {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-top-1624707177 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 179px;
+    }
+    
+    .custom-shape-divider-top-1624707177 .shape-fill {
+        fill: #50E3C2;
+    }
+
+}
+#container {
+    background:url(blob_20-9-45.svg)no-repeat center;
+    background-size: cover;
+    position: relative;
+
+}
+
+@media screen and (min-width:769px) { 
+    /*　画面サイズが480pxからはここを読み込む　*/
+#container {
+    padding: 80px 140px 100px;
+
+}
+.header {
+    &_bg {
+        padding: 50px 0 35px;
+    }
+    h1 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    }
+    }
+.mailform {
+    background: white;
+    width: 980px;
+    margin: 0 auto;
+    padding: 50px;
+    .must {
+        margin: 0 6px 0 0;
+        padding: 0 0 2px;
+        font-size: 10px;
+        border-bottom: solid 3px #f99c32;
+        vertical-align: text-top;
+    }
+    .wrap {display: flex;}
+    .mfp + .mfp {
+        margin-top: 1.5rem;
+      }
+      
+      .mfp label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      
+      .form-control {
+        background: #fff;
+        border: 1px solid #dedede;
+        border-radius: 4px;
+        height: calc(1.5rem + 1rem + 2px);
+        line-height: 1.5;
+        padding: 0.5rem 0.75rem;
+        vertical-align: middle;
+      }
+      .mfp_col5 + .mfp_col5 {
+          margin: 10px 0 0;
+      }
+      .mfp_col10 + .mfp_col10 {
+        margin: 10px 0 0;
+      }
+      .form-control:focus {
+        outline: 0;
+        border-color: #ffaf54;
+      }
+      
+      textarea.form-control {
+        height: 6rem;
+        resize: vertical;
+      }
+      
+      .custom-radio [type="radio"] {
+        opacity: 0;
+      }
+      
+      .custom-radio label {
+        padding-left: 2rem;
+        position: relative;
+      }
+      
+      .custom-radio label::before {
+        content: "";
+        border: 1px solid #dedede;
+        border-radius: 9999px;
+        display: inline-block;
+        height: 20px;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+        width: 20px;
+      }      
+      .custom-radio [type="radio"]:checked + label::before {
+        border-width: 7px;
+      }
+
+}
+.mfp_buttons {
+    margin: 35px auto;
+    width: 148px;
+    button {
+      display       : inline-block;
+      border-radius : 5%;          /* 角丸       */
+      font-size     : 18pt;        /* 文字サイズ */
+      text-align    : center;      /* 文字位置   */
+      cursor        : pointer;     /* カーソル   */
+      padding       : 12px 12px;   /* 余白       */
+      background    : #f99c32;     /* 背景色     */
+      color         : #ffffff;     /* 文字色     */
+      line-height   : 1em;         /* 1行の高さ  */
+      transition    : .3s;         /* なめらか変化 */
+      border        : 2px solid #f99c32;    /* 枠の指定 */
+    }
+    button:hover {
+        opacity: .8;
+    }
+  }
+  .custom-checkbox [type="checkbox"] {
+    opacity: 0;
+  }
+  
+  .custom-checkbox label {
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .custom-checkbox label::before {
+    content: "";
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    display: inline-block;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    width: 16px;
+  }
+  
+  .custom-checkbox [type="checkbox"]:focus + label .radio-text {
+    background: linear-gradient(transparent 60%, #fd94b4 60%);
+  }
+  
+  .custom-checkbox [type="checkbox"]:checked + label::before {
+    background-color: #ff467e;
+  }
+  
+  .custom-checkbox [type="checkbox"]:checked + label::after {
+    content: "\2714";
+    color: #fff;
+    display: inline-block;
+    font-size: 0.5rem;
+    left: 4px;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+  }
+}
+
+
+@media screen and (max-width:768px) { 
+    /*　画面サイズが480pxからはここを読み込む　*/
+}
+
