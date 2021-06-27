@@ -15,7 +15,7 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 179px;
+  height: 200px;
 }
 
 .header .custom-shape-divider-top-1624707177 .shape-fill {
@@ -34,7 +34,7 @@
     padding: 80px 140px 100px;
   }
   .header_bg {
-    padding: 50px 0 35px;
+    padding: 70px 0 35px;
   }
   .header h1 {
     position: relative;
@@ -97,7 +97,7 @@
     padding-left: 2rem;
     position: relative;
   }
-  .mailform .custom-radio label::before {
+  .mailform .custom-radio input[type="radio"] + span::before {
     content: "";
     border: 1px solid #dedede;
     border-radius: 9999px;
@@ -110,7 +110,8 @@
             transform: translatey(-50%);
     width: 20px;
   }
-  .mailform .custom-radio [type="radio"]:checked + label::before {
+  .mailform .custom-radio input[type="radio"]:checked + span::before {
+    border: 1px solid #ffaf54;
     border-width: 7px;
   }
   .mfp_buttons {
@@ -151,7 +152,7 @@
     padding-left: 1.5rem;
     position: relative;
   }
-  .custom-checkbox label::before {
+  .custom-checkbox input[type="checkbox"] + span::before {
     content: "";
     border: 1px solid #dedede;
     border-radius: 3px;
@@ -164,14 +165,11 @@
             transform: translatey(-50%);
     width: 16px;
   }
-  .custom-checkbox [type="checkbox"]:focus + label .radio-text {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #fd94b4));
-    background: linear-gradient(transparent 60%, #fd94b4 60%);
+  .custom-checkbox input[type="checkbox"]:checked + span::before {
+    background-color: #f99c32;
+    border: 1px solid #f99c32;
   }
-  .custom-checkbox [type="checkbox"]:checked + label::before {
-    background-color: #ff467e;
-  }
-  .custom-checkbox [type="checkbox"]:checked + label::after {
+  .custom-checkbox input[type="checkbox"]:checked + span::after {
     content: "\2714";
     color: #fff;
     display: inline-block;
