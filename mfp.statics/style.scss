@@ -1,4 +1,9 @@
 .header {
+  &_bg {
+    background:url(waves.svg)no-repeat center;
+    background-size: cover;
+    position: relative;
+  }
     .custom-shape-divider-top-1624707177 {
         position: absolute;
         z-index: 0;
@@ -22,28 +27,30 @@
     }
 
 }
-#container {
-    background:url(blob_20-9-45.svg)no-repeat center;
-    background-size: cover;
-    position: relative;
-
+#mailformpro {
+  background:url(blob_20-9-45.svg)no-repeat center;
+  background-size: cover;
+  position: relative;
+  padding: 70px 0 0;
 }
-
+#mfp_phase_confirm #mfp_confirm_table {
+  margin: 0 auto;
+}
+#footer p {text-align: center;}
+#mfp_phase_confirm_inner {
+  text-align: center;
+}
 @media screen and (min-width:769px) { 
     /*　画面サイズが480pxからはここを読み込む　*/
-#container {
-    padding: 80px 140px 100px;
-
-}
 .header {
     &_bg {
-        padding: 70px 0 35px;
+        padding: 70px 0 0;
     }
     h1 {
     position: relative;
     z-index: 2;
     text-align: center;
-    color: white;
+    color: #a0a0a0;
     }
     }
 .mailform {
@@ -138,6 +145,9 @@
     }
     button:hover {
         opacity: .8;
+    }
+    button + button {
+      margin: 10px 0 0;
     }
   }
   .custom-checkbox [type="checkbox"] {
